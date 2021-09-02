@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+  <h1>Welcome!</h1>
+    
+ <p> Hi {{ session['name'] }}! We will be presenting you with a few statements and all you need to do is respond with either true or false. At the end, we will suggest some cars for you depending on your needs and preferences. Let's get started!</p>
+
+
+    <ul>
+      <li><a href="/question1">Get started</a></li
+    </ul>
+
+{% endblock %}

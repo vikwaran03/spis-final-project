@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+
+{% block title %}Home{% endblock %}
+
+
+{% block content %}
+
+    <h1>Car Reccomendation Service</h1>
+
+    <form action={{ url_for("renderWelcomeResult") }} method="POST">
+
+     Please Enter Your Name! <br>
+
+     <input type="text" name="name">
+     <br>
+     <input type="submit" value="Submit">
+     
+
+    </form>
+
+
+{% endblock %}
